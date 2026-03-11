@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: polyedge
+    runtime: python
+    buildCommand: ""
+    startCommand: python server.py
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false   # paste this in the Render dashboard
