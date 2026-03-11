@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: polyedge
+    runtime: python
+    buildCommand: ""
+    startCommand: python server.py
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # you'll paste this in the Render dashboard
